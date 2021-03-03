@@ -1,0 +1,39 @@
+.gracias__text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+    margin: 0 auto;
+    @include breakpoint-up(medium){
+        max-width: 400px;
+    }
+}
+
+.btn-gracias{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+.btn{
+    width: 100px;
+    margin: 0 1rem;
+    border-radius: 4px;
+    background-color: $moderateCyan; 
+    height: 2.8125rem;
+    padding: 0 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    @include breakpoint-up(medium){
+        min-width: 150px;
+
+    }
+    &--bg{
+     background-color: white;
+     color: $darkGray;
+     font-weight: bold;
+    }
+}
+}
+
